@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tetris — Projeto Full Stack</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main>
+    <h1>🎮 Tetris</h1>
+    <div class="layout">
+      <canvas id="board" width="300" height="600" aria-label="Tabuleiro do Tetris"></canvas>
+      <aside>
+        <h2>Próxima peça</h2>
+        <canvas id="next" width="144" height="144"></canvas>
+        <p>Pontos: <strong id="score">0</strong></p>
+        <p>Linhas: <strong id="lines">0</strong></p>
+        <p>Nível: <strong id="level">1</strong></p>
+        <p id="status" role="status">Jogando</p>
+        <button id="pause">Pausar (P)</button>
+        <button id="restart">Reiniciar</button>
+        <p class="hint">← → mover · ↑ girar · ↓ descer · espaço: queda rápida</p>
+      </aside>
+    </div>
+    <div class="touch-controls" aria-label="Controles para celular">
+      <button data-key="ArrowLeft">←</button>
+      <button data-key="ArrowDown">↓</button>
+      <button data-key="ArrowUp">↻</button>
+      <button data-key="ArrowRight">→</button>
+      <button data-key=" ">⤓</button>
+    </div>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

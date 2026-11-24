@@ -1,0 +1,105 @@
+:root {
+    font-family: system-ui, sans-serif;
+    color-scheme: dark
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #0b1220;
+    color: #e5e7eb
+}
+
+main {
+    max-width: 780px;
+    margin: 20px auto;
+    padding: 0 16px
+}
+
+h1 {
+    font-size: 2rem
+}
+
+.layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start
+}
+
+canvas {
+    background: #111827;
+    border: 2px solid #334155;
+    border-radius: 8px
+}
+
+#board {
+    width: 300px;
+    height: 600px;
+    max-width: 100%
+}
+
+aside {
+    flex: 1;
+    min-width: 180px
+}
+
+aside h2 {
+    font-size: 1.1rem
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 15px;
+    margin: 4px 4px 4px 0;
+    cursor: pointer;
+    font-weight: 600
+}
+
+button:hover {
+    background: #1d4ed8
+}
+
+.hint {
+    font-size: .85rem;
+    color: #94a3b8;
+    line-height: 1.5
+}
+
+.touch-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 14px
+}
+
+.touch-controls button {
+    min-width: 54px;
+    font-size: 1.3rem
+}
+
+@media(max-width:560px) {
+    .layout {
+        flex-direction: column;
+        align-items: center
+    }
+
+    aside {
+        width: 100%;
+        text-align: center
+    }
+
+    #board {
+        height: auto;
+        aspect-ratio: 1/2
+    }
+
+    .touch-controls {
+        justify-content: center
+    }
+}
